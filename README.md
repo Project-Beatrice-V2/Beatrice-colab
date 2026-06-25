@@ -87,6 +87,7 @@ Unlike Google Colab, Kaggle's environment runs behind a secure firewall and has 
 4. **Downloading Outputs:**
    - Rather than triggering automatic browser downloads, Kaggle will generate a downloadable link via Jupyter `FileLink` in the cell output.
    - Click the link generated in **Step 6** of the notebook to download your VST3 compatibility ZIP file.
+   - **Alternative (Manual Download):** You can also find your zipped outputs and checkpoints directly in the right-hand **"Data"** / **"Output"** sidebar under the `/kaggle/working` directory. Click the three dots next to the file (e.g., `beatrice_vst3_files.zip`) and choose **Download**.
 
 ---
 
