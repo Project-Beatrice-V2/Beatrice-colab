@@ -6,7 +6,7 @@
 
 > Train high-fidelity, real-time voice conversion models using **Beatrice V2** on Google Colab or Kaggle.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](BeatriceV2_Trainer_Notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](BeatriceV2_Trainer_Notebook_Colab.ipynb)
 [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](BeatriceV2_Trainer_Notebook_Kaggle.ipynb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Beatrice V2](https://img.shields.io/badge/Model-Beatrice%20V2-blueviolet)](https://github.com/Project-Beatrice-V2)
