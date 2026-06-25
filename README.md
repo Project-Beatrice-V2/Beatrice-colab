@@ -66,6 +66,30 @@ When training completes, choose your download format:
 
 ---
 
+## 📓 Kaggle-Specific Guide & Manual Actions
+
+Unlike Google Colab, Kaggle's environment runs behind a secure firewall and has different file import/download mechanisms. If you are training on Kaggle, please note the following manual steps:
+
+1. **Activate GPU Accelerator:**
+   - In the right-hand panel of your Kaggle notebook under **Notebook Options**, set **Accelerator** to **GPU T4 x2** or **GPU P100**.
+
+2. **Dataset Import (Option 2b):**
+   - Kaggle does not support interactive file uploading dialogs.
+   - To use your own voice/dataset:
+     1. Click **+ Add Input** in the right-hand sidebar.
+     2. Upload your ZIP or WAV files as a new Kaggle Dataset.
+     3. Copy the dataset path (e.g., `/kaggle/input/your-dataset-name`) and paste it into the `kaggle_dataset_path` variable in the notebook cell.
+
+3. **Gradio/Settings UI Network Tunneling:**
+   - Because Kaggle blocks local network ports, the Settings UI cell will run locally but cannot be accessed directly via localhost links.
+   - **Note:** You can skip the Settings UI cell entirely (the training script automatically uses optimal defaults), or configure an SSH/HTTPS tunnel (like `ngrok` or `localtunnel`) mapped to the printed local port.
+
+4. **Downloading Outputs:**
+   - Rather than triggering automatic browser downloads, Kaggle will generate a downloadable link via Jupyter `FileLink` in the cell output.
+   - Click the link generated in **Step 6** of the notebook to download your VST3 compatibility ZIP file.
+
+---
+
 ## ⚠️ Important Requirements
 
 - **GPU Acceleration:** Beatrice V2 requires a GPU to train efficiently. 
